@@ -106,7 +106,7 @@ OfficeScene.create()
 
 **Desks (6):** black/white × idle/coding/coding-alt
 **Avatars (11 characters):** Jesse, Riley, Rose, Tanya + 7 NPCs — each with blink, talk, wave1, wave2
-**Furniture (13):** bookshelf, whiteboard, clock, plant1-3, flowers1-2, couch, rug, coffee_mug, blinds, coffee_table
+**Furniture (30+):** bookshelf, whiteboard, clock, plant1-3, flowers1-2, couch, rug, coffee_mug, blinds, coffee_table, armchair, backpacks, bulletin_board, cushions, lamps, monstera, picture_frame, posters, succulents, and more
 
 ### Available Asset Pack (`temp/pixel-assets/town/`)
 

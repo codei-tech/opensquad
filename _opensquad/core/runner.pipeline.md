@@ -15,6 +15,39 @@ Before starting execution:
    - Company context from `_opensquad/_memory/company.md`
    - Squad memory from `squads/{name}/_memory/memories.md`
 
+1b. **Memory format migration** — After loading `memories.md`, check whether it uses the new format by scanning for the `## Estilo de Escrita` section header:
+   ```bash
+   grep -q "## Estilo de Escrita" squads/{name}/_memory/memories.md && echo "NEW_FORMAT" || echo "OLD_FORMAT"
+   ```
+   - If `NEW_FORMAT` → proceed normally.
+   - If `OLD_FORMAT` (or file is empty / does not exist) → silently migrate before proceeding:
+     a. Write `squads/{name}/_memory/memories.md` with the new empty-sections format:
+        ```markdown
+        # Squad Memory: {squad-name}
+
+        ## Estilo de Escrita
+
+        ## Design Visual
+
+        ## Estrutura de Conteúdo
+
+        ## Proibições Explícitas
+
+        ## Técnico (específico do squad)
+        ```
+     b. Check if `squads/{name}/_memory/runs.md` exists:
+        ```bash
+        test -f squads/{name}/_memory/runs.md && echo "EXISTS" || echo "MISSING"
+        ```
+        If `MISSING`, create it with:
+        ```markdown
+        # Run History: {squad-name}
+
+        | Data | Run ID | Tema | Output | Resultado |
+        |------|--------|------|--------|-----------|
+        ```
+   - Do NOT inform the user or pause execution for this migration — it is transparent.
+
 2. Read `squads/{name}/pipeline/pipeline.yaml` for the pipeline definition
 3. **Resolve skills**: Read `squad.yaml` → `skills` section. For each non-native skill (anything other than web_search, web_fetch):
    a. Verify `skills/{skill}/SKILL.md` exists

@@ -91,7 +91,7 @@ Read these files to understand the squad:
 - `_opensquad/_memory/company.md` — company name, brand, industry, target audience
 - `_opensquad/_memory/preferences.md` — user preferences (language, style, tone)
 
-Use the company context and user preferences to adapt ALL template content: example text should reflect the company's domain and audience, colors should align with brand if available, and language should match the user's Output Language preference. Never show generic "Lorem ipsum" to the user — always generate contextually relevant example content.
+Use the company context and user preferences to adapt template content: example text should reflect the company's domain and audience, colors should align with brand if available, and language should match the user's Output Language preference. If company context or preferences are not available, placeholder text (Lorem ipsum or similar) is fine.
 
 ### Step 2: Read Base Templates
 

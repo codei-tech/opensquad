@@ -399,12 +399,9 @@ After a step completes output and there IS a next step (MANDATORY):
      ```
    - `"updatedAt"`: now
 
-2. **Wait for animation** — Run via Bash tool:
-   ```bash
-   sleep 3
-   ```
+2. _(No delay — proceed immediately to working state)_
 
-3. **Write working state** — Write `squads/{name}/state.json` again with:
+2. **Write working state** — Write `squads/{name}/state.json` again with:
    - Current agent: `"status": "done"`
    - Next agent: `"status": "working"`
    - Keep the `"handoff"` object from step 1 unchanged

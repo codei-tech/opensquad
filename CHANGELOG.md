@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [Unreleased]
 
+## [0.1.14] - 2026-03-30
+
+### Added
+- Resend email skill — send emails through Resend's MCP server (single, batch, scheduling, attachments)
+- "Para quem?" and "O que da pra fazer?" sections in README
+- IDE working directory note in README English section
+
+### Fixed
+- `.gitignore` and `.npmignore` updated to exclude test artifacts and local settings
+
 ## [0.1.13] - 2026-03-30
 
 Major release with security, transparency, and token optimization improvements — inspired by the thorough audit from [@morpheus-zion](https://github.com/morpheus-zion) in [#18](https://github.com/renatoasse/opensquad/issues/18). Thank you for the contribution that directly shaped this release.

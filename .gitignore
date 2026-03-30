@@ -8,3 +8,8 @@ _opensquad/_browser_profile/
 docs/
 .superpowers/
 temp/
+tests/
+test-results/
+temp/squads/
+.claude/settings.local.json
+dashboards/test-results/

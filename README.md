@@ -20,6 +20,28 @@ Exemplo:
 - **Designer** cria as imagens para redes sociais
 - **Revisor** garante qualidade antes da entrega
 
+## Para quem?
+
+Para qualquer pessoa ou equipe que queira automatizar trabalho operacional e repetitivo com agentes de IA.
+
+- **Criadores de conteúdo** — automatize pesquisa, redação e design para redes sociais, blogs e newsletters
+- **Agências e freelancers** — crie pipelines reutilizáveis para atender múltiplos clientes
+- **Times de marketing** — produza conteúdo consistente com aprovação humana nos checkpoints
+- **Times de RH** — automatize triagem de currículos, comunicações internas e onboarding
+- **Times de gestão** — gere relatórios, apresentações e dashboards a partir de dados brutos
+
+## O que dá pra fazer?
+
+- **Produção de conteúdo** — carrosséis, posts estáticos, artigos de blog, LinkedIn, com publicação automática inclusa
+- **Refatoração de conteúdo** — transformar um vídeo em carrossel, artigo, thread ou qualquer outro formato
+- **Criação e edição de vídeos** — cortar vídeos longos em reels, montar vídeos do zero
+- **Análise de dados** — transformar planilhas em apresentações, sites ou dashboards
+- **Planejamento de campanhas** — gerar roteiros, e-mails, mensagens de WhatsApp, cronogramas de lançamento, tudo de uma vez
+- **Roteiros de vídeos longos** — VSLs, webinars, aulas
+- **Radar de tendências** — monitorar notícias e tendências do nicho e alimentar automaticamente outros squads, como o de produção de conteúdo
+- **Tutoriais e manuais** — o agente navega na internet, bate prints e monta um documento completo passo a passo (ideal para manuais de SaaS)
+- E muito mais — qualquer fluxo de trabalho que envolva pesquisa, criação ou automação
+
 ## Instalação
 
 **Pré-requisito:** Node.js 20+
@@ -174,6 +196,8 @@ Example:
 ```bash
 npx opensquad init
 ```
+
+> **Note:** Always run your AI IDE from inside the project directory where you ran `npx opensquad init`. The `/opensquad` command is only available when the IDE is opened in that folder.
 
 To update an existing installation:
 
